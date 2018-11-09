@@ -1,0 +1,15 @@
+TD 1:
+	1.1 La fonction socket() est contenu dans la librairie des appels systeme
+	1.2 Les paramètres de la fonction sont des paramètres d'entrées pour le noyau car ce sont des informations pour la creation du descripteur
+	1.3 les fichiers a inclure dans le code source sont les fichier : sys/types.h et sys/socket.h
+	1.4 
+	1.5 l'argument domain indique le domaine de communication pour le dialogue ; ceci sélectionne la famille de protocole à employer.
+	    l'argument type indique le type de service (orienté connexion ou non).
+	    l'argument protocole permet de spécifier un protocole permettant de fournir le service désiré 
+	    domain : PF_INET ou PF_INET6
+	    type : SOCK_STREAM
+	    protocol = 0 pour laisser le systeme choisir
+	1.6 le numero est toujours 3 car cette valeur est la valeur par defaut du systeme, ce numero decrit le descripteur ce qui permet de l'identifier comme une prise de telephone par exemple.
+	
+	2.1 la structure sockaddr_in contient la famille d'adresse du socket ainsi que le port et une adress dans l'ordre des octets réseau, la structure permet de combiner l'adresse ip d'interface et le numero de port
+	2.2 
