@@ -8,7 +8,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <dirent.h>
-
+#define MAX_SIZE 512
 void print_stat(char *ref, struct stat *statut)
 {
 	struct passwd *pw;
@@ -47,46 +47,50 @@ void print_stat(char *ref, struct stat *statut)
 
 ls(char *file)
 {
-	struct stat statut;
+	struct stat statut=malloc(sizeof(struct stat));
+	struct direntf;
 	int i;
-	
+
 	if(argc<2) 
 	{
 		if(fstat(STDIN_FILENO, &statut) == -1)
 			{
-				fprintf(stderr, "%s : impossible d'obtenir le status de %s\n\n", argv[0], "<STDIN>");
+				printf("%s : impossible d'obtenir le status de <STDIN>\n\n", argv[0]);
 				exit(EXIT_FAILURE);
 			}
 		print_stat("<STDIN>", &statut);
 	}
-	else 
+	opendir(dir);
+	while(f=readdir(dir));
+        {
+                ls(dir+"/"+f);
+                stat(f, state);
+                if(S_ISDIR(state->st_mode)) ls_recursif("dir/f");
+        }
+        closedir(dir);
+
+	/*else 
 	{
 		for(i=1; i<argc; i++)
 		{
 			if(stat(argv[i], &statut) == -1) 
 			{
-				fprintf(stderr, "%s : impossible d'ouvir le status de %s\n", argv[0], argv[i]);
+				printf("%s : impossible d'ouvir le status de %s\n", argv[0], argv[i]);
 				continue;
 			}
 			print_stat(argv[i], &statut); 
 		}
-	}
+	}*/
 	exit(EXIT_SUCCESS);
 }
 
-ls_recursif(char *dir)
+ls(char *file)
 {
-	struct dirent f;
-	opendir(dir);
-	while(f=readdir(dir));
-	{
-		ls(dir+"/"+f);
-		
-}
-int main (int argc, char *argv[])
-{
-	//ouvrir le dossier, tq f = readdir(...) -> ls, si f = dir ->recursion, close dir
-	
-
-
+	struct stat statut;
+	if(stat(file, &statut) == -1) 
+                        {
+                                printf("%s : impossible d'ouvir le status de %s\n", argv[0], argv[i]);
+                                continue;
+                        }
+                        print_stat(file, &statut);		
 }	

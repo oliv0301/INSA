@@ -32,7 +32,7 @@ void print_stat(char *ref, struct stat *statut)
 	gr = getgrgid(statut->st_gid);
 	if(gr!=NULL) strcpy(grs, gr->gr_name);
 	else sprintf(grs,"%8d", (int)statut->st_gid);
-	printf("%c%c%c%c%c%c%c%c%c%c %2d %8s %8s %9d %s %s\n", type, 
+	printf("%c %c%c%c|%c%c%c|%c%c%c %2d %8s %8s %9d %s %s\n", type, 
 		statut->st_mode&S_IRUSR?'r':'-', 	
 		statut->st_mode&S_IWUSR?'w':'-',
 		statut->st_mode&S_IXUSR?'x':'-',
