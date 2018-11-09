@@ -1,0 +1,140 @@
+\hypertarget{file_8h}{\section{file.\+h File Reference}
+\label{file_8h}\index{file.\+h@{file.\+h}}
+}
+{\ttfamily \#include \char`\"{}structures.\+h\char`\"{}}\\*
+Include dependency graph for file.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{file_8h_ae86c4db2baa3fbbb28ba20efc1958c39}{parcours\+Largeur} (\hyperlink{structures_8h_acf975688ce52624261176666cbe1428d}{arbre} $\ast$r, int niveaumax)
+\begin{DoxyCompactList}\small\item\em \+: fait appel a parcour\+Largeur\+Recursif apres avoir creer la file correspond a l'abre donné en parametre \end{DoxyCompactList}\item 
+int \hyperlink{file_8h_ad9fbbd0da18627b89c05572fd8cc4487}{file\+Vide} (\hyperlink{structfile}{file} $\ast$f)
+\begin{DoxyCompactList}\small\item\em \+: test si une file est vide ou non \end{DoxyCompactList}\item 
+void \hyperlink{file_8h_a959fcb5a8c527c69e2c18cfa5dbc6633}{enfiler} (\hyperlink{structfile}{file} $\ast$f, \hyperlink{structnoeud}{noeud} $\ast$n)
+\begin{DoxyCompactList}\small\item\em \+: permet d'ajouter un element a la file, cette element ayant un noeud donner en parametre \end{DoxyCompactList}\item 
+void \hyperlink{file_8h_aa4b866d049db2f285fe0593649884adc}{print\+File} (\hyperlink{structfile}{file} $\ast$f)
+\begin{DoxyCompactList}\small\item\em \+: affiche une file \end{DoxyCompactList}\item 
+void \hyperlink{file_8h_a5593dc6426626dc9ebb71c7d224a21c6}{print\+Element\+File} (\hyperlink{structelementFile}{element\+File} $\ast$f)
+\begin{DoxyCompactList}\small\item\em \+: affiche un element d'une file passé en parametre \end{DoxyCompactList}\item 
+\hyperlink{structnoeud}{noeud} $\ast$ \hyperlink{file_8h_ae73de302a04131c0ba415699716cb0c2}{defiler} (\hyperlink{structfile}{file} $\ast$f)
+\begin{DoxyCompactList}\small\item\em \+: permet de defiler le dernier element de la file et change le pointeur sur le dernier element de la file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{file_8h_ae73de302a04131c0ba415699716cb0c2}{\index{file.\+h@{file.\+h}!defiler@{defiler}}
+\index{defiler@{defiler}!file.\+h@{file.\+h}}
+\subsubsection[{defiler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf noeud}$\ast$ defiler (
+\begin{DoxyParamCaption}
+\item[{{\bf file} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{file_8h_ae73de302a04131c0ba415699716cb0c2}
+
+
+\+: permet de defiler le dernier element de la file et change le pointeur sur le dernier element de la file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$f (file) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: noeud$\ast$ 
+\end{DoxyReturn}
+\hypertarget{file_8h_a959fcb5a8c527c69e2c18cfa5dbc6633}{\index{file.\+h@{file.\+h}!enfiler@{enfiler}}
+\index{enfiler@{enfiler}!file.\+h@{file.\+h}}
+\subsubsection[{enfiler}]{\setlength{\rightskip}{0pt plus 5cm}void enfiler (
+\begin{DoxyParamCaption}
+\item[{{\bf file} $\ast$}]{f, }
+\item[{{\bf noeud} $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{file_8h_a959fcb5a8c527c69e2c18cfa5dbc6633}
+
+
+\+: permet d'ajouter un element a la file, cette element ayant un noeud donner en parametre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$f(file), $\ast$n (noeud a ajouter) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{file_8h_ad9fbbd0da18627b89c05572fd8cc4487}{\index{file.\+h@{file.\+h}!file\+Vide@{file\+Vide}}
+\index{file\+Vide@{file\+Vide}!file.\+h@{file.\+h}}
+\subsubsection[{file\+Vide}]{\setlength{\rightskip}{0pt plus 5cm}int file\+Vide (
+\begin{DoxyParamCaption}
+\item[{{\bf file} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{file_8h_ad9fbbd0da18627b89c05572fd8cc4487}
+
+
+\+: test si une file est vide ou non 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$f (file) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: int (1 si vide 0 sinon) 
+\end{DoxyReturn}
+\hypertarget{file_8h_ae86c4db2baa3fbbb28ba20efc1958c39}{\index{file.\+h@{file.\+h}!parcours\+Largeur@{parcours\+Largeur}}
+\index{parcours\+Largeur@{parcours\+Largeur}!file.\+h@{file.\+h}}
+\subsubsection[{parcours\+Largeur}]{\setlength{\rightskip}{0pt plus 5cm}void parcours\+Largeur (
+\begin{DoxyParamCaption}
+\item[{{\bf arbre} $\ast$}]{r, }
+\item[{int}]{niveaumax}
+\end{DoxyParamCaption}
+)}}\label{file_8h_ae86c4db2baa3fbbb28ba20efc1958c39}
+
+
+\+: fait appel a parcour\+Largeur\+Recursif apres avoir creer la file correspond a l'abre donné en parametre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$r (arbre), niveaumax (int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{file_8h_a5593dc6426626dc9ebb71c7d224a21c6}{\index{file.\+h@{file.\+h}!print\+Element\+File@{print\+Element\+File}}
+\index{print\+Element\+File@{print\+Element\+File}!file.\+h@{file.\+h}}
+\subsubsection[{print\+Element\+File}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Element\+File (
+\begin{DoxyParamCaption}
+\item[{{\bf element\+File} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{file_8h_a5593dc6426626dc9ebb71c7d224a21c6}
+
+
+\+: affiche un element d'une file passé en parametre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$f (element de la file) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{file_8h_aa4b866d049db2f285fe0593649884adc}{\index{file.\+h@{file.\+h}!print\+File@{print\+File}}
+\index{print\+File@{print\+File}!file.\+h@{file.\+h}}
+\subsubsection[{print\+File}]{\setlength{\rightskip}{0pt plus 5cm}void print\+File (
+\begin{DoxyParamCaption}
+\item[{{\bf file} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{file_8h_aa4b866d049db2f285fe0593649884adc}
+
+
+\+: affiche une file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$f (file a afficher) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}

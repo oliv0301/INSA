@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1513614528 source:/eleves/ohamel/Documents/Algo/TD2/File.c
+	<stdio.h>
+	<stdlib.h>
+	"Element.h"
+	"File.h"
+
+1513614428 /eleves/ohamel/Documents/Algo/TD2/Element.h
+
+1513615013 /eleves/ohamel/Documents/Algo/TD2/File.h
+
+1513616044 source:/eleves/ohamel/Documents/Algo/TD2/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Element.h"
+	"Pile.h"
+	"File.h"
+
+1513615060 /eleves/ohamel/Documents/Algo/TD2/Pile.h
+
+1513616148 source:/eleves/ohamel/Documents/Algo/TD2/Pile.c
+	<stdio.h>
+	<stdlib.h>
+	"Element.h"
+	"Pile.h"
+

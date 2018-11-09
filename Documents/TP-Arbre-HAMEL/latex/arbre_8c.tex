@@ -1,0 +1,375 @@
+\hypertarget{arbre_8c}{\section{arbre.\+c File Reference}
+\label{arbre_8c}\index{arbre.\+c@{arbre.\+c}}
+}
+{\ttfamily \#include \char`\"{}arbre.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}file.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for arbre.\+c\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structnoeud}{noeud} $\ast$ \hyperlink{arbre_8c_af433ad9723fdaeb29f5907993373fbba}{creer\+Noeud} (int v)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction permet de creer un noeud, met son champ valeur égale a v, et met le pointeur Fgauche et F\+Droit a N\+U\+L\+L \end{DoxyCompactList}\item 
+void \hyperlink{arbre_8c_a28cd0c63a27633ef860a0e7283f5b791}{accroche} (\hyperlink{structnoeud}{noeud} $\ast$r, \hyperlink{structnoeud}{noeud} $\ast$n)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction permet d'accrocher le noeud n comme sous noeud fils avec la règle établie dans l'énoncé \end{DoxyCompactList}\item 
+void \hyperlink{arbre_8c_ad894875104670220758198edc8f6651d}{inserer\+Dans\+Arbre} (\hyperlink{structures_8h_acf975688ce52624261176666cbe1428d}{arbre} $\ast$r, \hyperlink{structnoeud}{noeud} $\ast$n)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction permet d'insérer un noeud dans l'arbre binaire \end{DoxyCompactList}\item 
+void \hyperlink{arbre_8c_ab3064152b3dcf187a8038127a70e5187}{inserer\+Tableau} (\hyperlink{structures_8h_acf975688ce52624261176666cbe1428d}{arbre} $\ast$r, int $\ast$tableau, int taille)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction permet de creer et d'inserer tous les noeuds d'un arbre \end{DoxyCompactList}\item 
+void \hyperlink{arbre_8c_a922679c06623ced25576058e5ce7138c}{afficher} (\hyperlink{structures_8h_acf975688ce52624261176666cbe1428d}{arbre} $\ast$r, int decalage)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction affiche un arbre \end{DoxyCompactList}\item 
+void \hyperlink{arbre_8c_acd5c7f2d7ca9f51bd6b02ef448f7e579}{print\+Noeud} (int n)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction permet d'afficher un noeud en remplacant les chiffres par des lettres ou pas \end{DoxyCompactList}\item 
+\hyperlink{structnoeud}{noeud} $\ast$ \hyperlink{arbre_8c_a7c985a3fa92c1cba346d017e04ec7751}{rechercher} (\hyperlink{structures_8h_acf975688ce52624261176666cbe1428d}{arbre} $\ast$r, int v)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction retrouve un noeud dont la valeur est val si il existe dans l'arbre \end{DoxyCompactList}\item 
+\hyperlink{structnoeud}{noeud} $\ast$ \hyperlink{arbre_8c_a7ac246b0cf85bc4e8a29cebc49b74a3b}{rechercher\+Derniere\+Lettre} (\hyperlink{structures_8h_acf975688ce52624261176666cbe1428d}{arbre} $\ast$un\+Arbre)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction recherche la derniere lettre d'un login I\+N\+S\+A dans l'arbre \end{DoxyCompactList}\item 
+void \hyperlink{arbre_8c_a5e2967e92772717f0eb8051529728df3}{deforestation\+Sauvage} (\hyperlink{structnoeud}{noeud} $\ast$n)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction permet de couper les fils d'un noeud \end{DoxyCompactList}\item 
+void \hyperlink{arbre_8c_adac9a6c116aad4b1cbf94c05ab1cd7bf}{deforestation} (\hyperlink{structnoeud}{noeud} $\ast$n)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction deforeste tout les fils d'un noeud en désallouant recursivement la mémoire de tout les sous fils de ce noeud \end{DoxyCompactList}\item 
+int \hyperlink{arbre_8c_ac0605f522186a91eeaf09cb68cd6cc5a}{somme} (\hyperlink{structures_8h_acf975688ce52624261176666cbe1428d}{arbre} $\ast$r)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction fais la somme de tout les noeuds d'un arbre \end{DoxyCompactList}\item 
+int \hyperlink{arbre_8c_a6f040cb49bafdb396ff55754af861cfa}{parcours\+Profondeur} (\hyperlink{structures_8h_acf975688ce52624261176666cbe1428d}{arbre} $\ast$r)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction affiche sur une ligne le parcour en profondeur de l'arbre \end{DoxyCompactList}\item 
+void \hyperlink{arbre_8c_a1bda5af24df7525c287b06c8e7412e52}{couper\+Petits} (\hyperlink{structures_8h_acf975688ce52624261176666cbe1428d}{arbre} $\ast$a, int hauteur)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction coupe tous les noeud ayant une valeur inférieur a la valeur donné en paramètre, cette valeur est inferieur a la racine \end{DoxyCompactList}\item 
+void \hyperlink{arbre_8c_ae86c4db2baa3fbbb28ba20efc1958c39}{parcours\+Largeur} (\hyperlink{structures_8h_acf975688ce52624261176666cbe1428d}{arbre} $\ast$r, int niveaumax)
+\begin{DoxyCompactList}\small\item\em \+: fait appel a parcour\+Largeur\+Recursif apres avoir creer la file correspond a l'abre donné en parametre \end{DoxyCompactList}\item 
+void \hyperlink{arbre_8c_a1746501809c9980b5539eb4659b317f2}{parcours\+Largeur\+Recursif} (\hyperlink{structfile}{file} $\ast$f, int niveaumax)
+\begin{DoxyCompactList}\small\item\em \+: cette fonction affiche une file correspondant à un abre en défiler le noeud à afficher et en enfilant ses fils si il en a \end{DoxyCompactList}\item 
+int \hyperlink{arbre_8c_af5ed9c7317b3cbb923eb2ffee0ed03a2}{parcours\+Profondeur\+Niveau} (\hyperlink{structures_8h_acf975688ce52624261176666cbe1428d}{arbre} $\ast$r, int niveau, int position)
+\begin{DoxyCompactList}\small\item\em \+: calcul la profondeur maximum de l'arbre \end{DoxyCompactList}\item 
+void \hyperlink{arbre_8c_a20b76dcb3349edeff8232e28bdc8ef92}{shift\+Espace} (double delta, int niveaumax, int niveau, int width)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{arbre_8c_a28cd0c63a27633ef860a0e7283f5b791}{\index{arbre.\+c@{arbre.\+c}!accroche@{accroche}}
+\index{accroche@{accroche}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{accroche}]{\setlength{\rightskip}{0pt plus 5cm}void accroche (
+\begin{DoxyParamCaption}
+\item[{{\bf noeud} $\ast$}]{r, }
+\item[{{\bf noeud} $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_a28cd0c63a27633ef860a0e7283f5b791}
+
+
+\+: cette fonction permet d'accrocher le noeud n comme sous noeud fils avec la règle établie dans l'énoncé 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$r (arbre), $\ast$n (noeud) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_a922679c06623ced25576058e5ce7138c}{\index{arbre.\+c@{arbre.\+c}!afficher@{afficher}}
+\index{afficher@{afficher}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void afficher (
+\begin{DoxyParamCaption}
+\item[{{\bf arbre} $\ast$}]{r, }
+\item[{int}]{decalage}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_a922679c06623ced25576058e5ce7138c}
+
+
+\+: cette fonction affiche un arbre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$r (arbre), decalage(int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_a1bda5af24df7525c287b06c8e7412e52}{\index{arbre.\+c@{arbre.\+c}!couper\+Petits@{couper\+Petits}}
+\index{couper\+Petits@{couper\+Petits}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{couper\+Petits}]{\setlength{\rightskip}{0pt plus 5cm}void couper\+Petits (
+\begin{DoxyParamCaption}
+\item[{{\bf arbre} $\ast$}]{a, }
+\item[{int}]{hauteur}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_a1bda5af24df7525c287b06c8e7412e52}
+
+
+\+: cette fonction coupe tous les noeud ayant une valeur inférieur a la valeur donné en paramètre, cette valeur est inferieur a la racine 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$a (arbre), hauteur (int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_af433ad9723fdaeb29f5907993373fbba}{\index{arbre.\+c@{arbre.\+c}!creer\+Noeud@{creer\+Noeud}}
+\index{creer\+Noeud@{creer\+Noeud}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{creer\+Noeud}]{\setlength{\rightskip}{0pt plus 5cm}{\bf noeud}$\ast$ creer\+Noeud (
+\begin{DoxyParamCaption}
+\item[{int}]{v}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_af433ad9723fdaeb29f5907993373fbba}
+
+
+\+: cette fonction permet de creer un noeud, met son champ valeur égale a v, et met le pointeur Fgauche et F\+Droit a N\+U\+L\+L 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & v (valeur du champ) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: cette fonction retourne un pointeur sur noeud 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_adac9a6c116aad4b1cbf94c05ab1cd7bf}{\index{arbre.\+c@{arbre.\+c}!deforestation@{deforestation}}
+\index{deforestation@{deforestation}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{deforestation}]{\setlength{\rightskip}{0pt plus 5cm}void deforestation (
+\begin{DoxyParamCaption}
+\item[{{\bf noeud} $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_adac9a6c116aad4b1cbf94c05ab1cd7bf}
+
+
+\+: cette fonction deforeste tout les fils d'un noeud en désallouant recursivement la mémoire de tout les sous fils de ce noeud 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$n(noeud) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_a5e2967e92772717f0eb8051529728df3}{\index{arbre.\+c@{arbre.\+c}!deforestation\+Sauvage@{deforestation\+Sauvage}}
+\index{deforestation\+Sauvage@{deforestation\+Sauvage}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{deforestation\+Sauvage}]{\setlength{\rightskip}{0pt plus 5cm}void deforestation\+Sauvage (
+\begin{DoxyParamCaption}
+\item[{{\bf noeud} $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_a5e2967e92772717f0eb8051529728df3}
+
+
+\+: cette fonction permet de couper les fils d'un noeud 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$n (noeud) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_ad894875104670220758198edc8f6651d}{\index{arbre.\+c@{arbre.\+c}!inserer\+Dans\+Arbre@{inserer\+Dans\+Arbre}}
+\index{inserer\+Dans\+Arbre@{inserer\+Dans\+Arbre}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{inserer\+Dans\+Arbre}]{\setlength{\rightskip}{0pt plus 5cm}void inserer\+Dans\+Arbre (
+\begin{DoxyParamCaption}
+\item[{{\bf arbre} $\ast$}]{r, }
+\item[{{\bf noeud} $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_ad894875104670220758198edc8f6651d}
+
+
+\+: cette fonction permet d'insérer un noeud dans l'arbre binaire 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$r (arbre), $\ast$n (noeud) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_ab3064152b3dcf187a8038127a70e5187}{\index{arbre.\+c@{arbre.\+c}!inserer\+Tableau@{inserer\+Tableau}}
+\index{inserer\+Tableau@{inserer\+Tableau}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{inserer\+Tableau}]{\setlength{\rightskip}{0pt plus 5cm}void inserer\+Tableau (
+\begin{DoxyParamCaption}
+\item[{{\bf arbre} $\ast$}]{r, }
+\item[{int $\ast$}]{tableau, }
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_ab3064152b3dcf187a8038127a70e5187}
+
+
+\+: cette fonction permet de creer et d'inserer tous les noeuds d'un arbre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$r (arbre), $\ast$tableau (valeur), taille (du tableau, int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_ae86c4db2baa3fbbb28ba20efc1958c39}{\index{arbre.\+c@{arbre.\+c}!parcours\+Largeur@{parcours\+Largeur}}
+\index{parcours\+Largeur@{parcours\+Largeur}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{parcours\+Largeur}]{\setlength{\rightskip}{0pt plus 5cm}void parcours\+Largeur (
+\begin{DoxyParamCaption}
+\item[{{\bf arbre} $\ast$}]{r, }
+\item[{int}]{niveaumax}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_ae86c4db2baa3fbbb28ba20efc1958c39}
+
+
+\+: fait appel a parcour\+Largeur\+Recursif apres avoir creer la file correspond a l'abre donné en parametre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$r (arbre), niveaumax (int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_a1746501809c9980b5539eb4659b317f2}{\index{arbre.\+c@{arbre.\+c}!parcours\+Largeur\+Recursif@{parcours\+Largeur\+Recursif}}
+\index{parcours\+Largeur\+Recursif@{parcours\+Largeur\+Recursif}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{parcours\+Largeur\+Recursif}]{\setlength{\rightskip}{0pt plus 5cm}void parcours\+Largeur\+Recursif (
+\begin{DoxyParamCaption}
+\item[{{\bf file} $\ast$}]{f, }
+\item[{int}]{niveaumax}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_a1746501809c9980b5539eb4659b317f2}
+
+
+\+: cette fonction affiche une file correspondant à un abre en défiler le noeud à afficher et en enfilant ses fils si il en a 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$f (file), niveaumax (int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_a6f040cb49bafdb396ff55754af861cfa}{\index{arbre.\+c@{arbre.\+c}!parcours\+Profondeur@{parcours\+Profondeur}}
+\index{parcours\+Profondeur@{parcours\+Profondeur}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{parcours\+Profondeur}]{\setlength{\rightskip}{0pt plus 5cm}int parcours\+Profondeur (
+\begin{DoxyParamCaption}
+\item[{{\bf arbre} $\ast$}]{r}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_a6f040cb49bafdb396ff55754af861cfa}
+
+
+\+: cette fonction affiche sur une ligne le parcour en profondeur de l'arbre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$r (arbre) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: retourne le niveau max 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_af5ed9c7317b3cbb923eb2ffee0ed03a2}{\index{arbre.\+c@{arbre.\+c}!parcours\+Profondeur\+Niveau@{parcours\+Profondeur\+Niveau}}
+\index{parcours\+Profondeur\+Niveau@{parcours\+Profondeur\+Niveau}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{parcours\+Profondeur\+Niveau}]{\setlength{\rightskip}{0pt plus 5cm}int parcours\+Profondeur\+Niveau (
+\begin{DoxyParamCaption}
+\item[{{\bf arbre} $\ast$}]{r, }
+\item[{int}]{niveau, }
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_af5ed9c7317b3cbb923eb2ffee0ed03a2}
+
+
+\+: calcul la profondeur maximum de l'arbre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$r (arbre), niveau (int), position (int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{arbre_8c_acd5c7f2d7ca9f51bd6b02ef448f7e579}{\index{arbre.\+c@{arbre.\+c}!print\+Noeud@{print\+Noeud}}
+\index{print\+Noeud@{print\+Noeud}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{print\+Noeud}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Noeud (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_acd5c7f2d7ca9f51bd6b02ef448f7e579}
+
+
+\+: cette fonction permet d'afficher un noeud en remplacant les chiffres par des lettres ou pas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & n(int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_a7c985a3fa92c1cba346d017e04ec7751}{\index{arbre.\+c@{arbre.\+c}!rechercher@{rechercher}}
+\index{rechercher@{rechercher}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{rechercher}]{\setlength{\rightskip}{0pt plus 5cm}{\bf noeud}$\ast$ rechercher (
+\begin{DoxyParamCaption}
+\item[{{\bf arbre} $\ast$}]{r, }
+\item[{int}]{v}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_a7c985a3fa92c1cba346d017e04ec7751}
+
+
+\+: cette fonction retrouve un noeud dont la valeur est val si il existe dans l'arbre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$r (arbre), val (int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: adresse du noeud ou N\+U\+L\+L 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_a7ac246b0cf85bc4e8a29cebc49b74a3b}{\index{arbre.\+c@{arbre.\+c}!rechercher\+Derniere\+Lettre@{rechercher\+Derniere\+Lettre}}
+\index{rechercher\+Derniere\+Lettre@{rechercher\+Derniere\+Lettre}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{rechercher\+Derniere\+Lettre}]{\setlength{\rightskip}{0pt plus 5cm}{\bf noeud}$\ast$ rechercher\+Derniere\+Lettre (
+\begin{DoxyParamCaption}
+\item[{{\bf arbre} $\ast$}]{un\+Arbre}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_a7ac246b0cf85bc4e8a29cebc49b74a3b}
+
+
+\+: cette fonction recherche la derniere lettre d'un login I\+N\+S\+A dans l'arbre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$un\+Arbre (arbre) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: le noeud qui possède la derniere lettre si il existe sinon N\+U\+L\+L; 
+\end{DoxyReturn}
+\hypertarget{arbre_8c_a20b76dcb3349edeff8232e28bdc8ef92}{\index{arbre.\+c@{arbre.\+c}!shift\+Espace@{shift\+Espace}}
+\index{shift\+Espace@{shift\+Espace}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{shift\+Espace}]{\setlength{\rightskip}{0pt plus 5cm}void shift\+Espace (
+\begin{DoxyParamCaption}
+\item[{double}]{delta, }
+\item[{int}]{niveaumax, }
+\item[{int}]{niveau, }
+\item[{int}]{width}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_a20b76dcb3349edeff8232e28bdc8ef92}
+\hypertarget{arbre_8c_ac0605f522186a91eeaf09cb68cd6cc5a}{\index{arbre.\+c@{arbre.\+c}!somme@{somme}}
+\index{somme@{somme}!arbre.\+c@{arbre.\+c}}
+\subsubsection[{somme}]{\setlength{\rightskip}{0pt plus 5cm}int somme (
+\begin{DoxyParamCaption}
+\item[{{\bf arbre} $\ast$}]{r}
+\end{DoxyParamCaption}
+)}}\label{arbre_8c_ac0605f522186a91eeaf09cb68cd6cc5a}
+
+
+\+: cette fonction fais la somme de tout les noeuds d'un arbre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$r(arbre) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: la somme (int) 
+\end{DoxyReturn}

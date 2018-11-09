@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1513085839 source:/eleves/ybaaomar/Documents/Algo/TP1/Listes-bugged/listes.c
+	"listes.h"
+
+1513088586 /eleves/ybaaomar/Documents/Algo/TP1/Listes-bugged/listes.h
+	<stdio.h>
+	<stdlib.h>
+
+1513088580 source:/eleves/ybaaomar/Documents/Algo/TP1/Listes-bugged/main.c
+	"listes.h"
+
+1513088036 source:/eleves/ybaaomar/Documents/Algo/TP YB/Nouveau dossier/listes.c
+	"listes.h"
+
+1512981932 /eleves/ybaaomar/Documents/Algo/TP YB/Nouveau dossier/listes.h
+	<stdio.h>
+	<stdlib.h>
+
+1513081852 source:c:\users\adre\dropbox\algo\tp1 listes\listes.c
+	"listes.h"
+
+1513081847 c:\users\adre\dropbox\algo\tp1 listes\listes.h
+	<stdio.h>
+	<stdlib.h>
+

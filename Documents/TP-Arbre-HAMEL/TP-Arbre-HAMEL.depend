@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1519158484 source:c:\users\adre\documents\algo\tp arbre et récursivité\tp-arbre-hamel\arbre.c
+	"arbre.h"
+	"file.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1519158255 
+
+1519158284 c:\users\adre\documents\algo\tp arbre et récursivité\tp-arbre-hamel\arbre.h
+	"structures.h"
+
+1519158284 s.h"
+
+1519158284 source:c:\users\adre\documents\algo\tp arbre et récursivité\tp-arbre-hamel\arbre.h
+	"structures.h"
+
+1519158255 source:c:\users\adre\documents\algo\tp arbre et récursivité\tp-arbre-hamel\main.c
+	<stdio.h>
+	"arbre.h"
+	"file.h"
+
+1519158284 c:\users\adre\documents\algo\tp arbre et récursivité\tp-arbre-hamel\file.h
+	"arbre.h"
+	"structures.h"
+
+1519156218 source:c:\users\adre\documents\algo\tp arbre et récursivité\tp-arbre-hamel\file.c
+	"arbre.h"
+	"file.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1519158472 c:\users\adre\documents\algo\tp arbre et récursivité\tp-arbre-hamel\structures.h
+
+1519232095 source:/eleves/ohamel/Documents/TP-Arbre-HAMEL/arbre.c
+	"arbre.h"
+	"file.h"
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<string.h>
+
+1519232090 /eleves/ohamel/Documents/TP-Arbre-HAMEL/arbre.h
+	"structures.h"
+
+1519154872 /eleves/ohamel/Documents/TP-Arbre-HAMEL/structures.h
+
+1519232090 /eleves/ohamel/Documents/TP-Arbre-HAMEL/file.h
+	"structures.h"
+
+1519154684 source:/eleves/ohamel/Documents/TP-Arbre-HAMEL/arbre.h
+	"structures.h"
+
+1519218968 source:/eleves/ohamel/Documents/TP-Arbre-HAMEL/file.c
+	"arbre.h"
+	"file.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1519230661 source:/eleves/ohamel/Documents/TP-Arbre-HAMEL/main.c
+	<stdio.h>
+	<stdlib.h>
+	"arbre.h"
+	"file.h"
+

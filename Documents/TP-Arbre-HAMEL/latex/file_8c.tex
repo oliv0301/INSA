@@ -1,0 +1,121 @@
+\hypertarget{file_8c}{\section{file.\+c File Reference}
+\label{file_8c}\index{file.\+c@{file.\+c}}
+}
+{\ttfamily \#include \char`\"{}arbre.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}file.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for file.\+c\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{file_8c_ad9fbbd0da18627b89c05572fd8cc4487}{file\+Vide} (\hyperlink{structfile}{file} $\ast$f)
+\begin{DoxyCompactList}\small\item\em \+: test si une file est vide ou non \end{DoxyCompactList}\item 
+void \hyperlink{file_8c_a959fcb5a8c527c69e2c18cfa5dbc6633}{enfiler} (\hyperlink{structfile}{file} $\ast$f, \hyperlink{structnoeud}{noeud} $\ast$n)
+\begin{DoxyCompactList}\small\item\em \+: permet d'ajouter un element a la file, cette element ayant un noeud donner en parametre \end{DoxyCompactList}\item 
+void \hyperlink{file_8c_aa4b866d049db2f285fe0593649884adc}{print\+File} (\hyperlink{structfile}{file} $\ast$f)
+\begin{DoxyCompactList}\small\item\em \+: affiche une file \end{DoxyCompactList}\item 
+void \hyperlink{file_8c_a5593dc6426626dc9ebb71c7d224a21c6}{print\+Element\+File} (\hyperlink{structelementFile}{element\+File} $\ast$f)
+\begin{DoxyCompactList}\small\item\em \+: affiche un element d'une file passé en parametre \end{DoxyCompactList}\item 
+\hyperlink{structnoeud}{noeud} $\ast$ \hyperlink{file_8c_ae73de302a04131c0ba415699716cb0c2}{defiler} (\hyperlink{structfile}{file} $\ast$f)
+\begin{DoxyCompactList}\small\item\em \+: permet de defiler le dernier element de la file et change le pointeur sur le dernier element de la file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{file_8c_ae73de302a04131c0ba415699716cb0c2}{\index{file.\+c@{file.\+c}!defiler@{defiler}}
+\index{defiler@{defiler}!file.\+c@{file.\+c}}
+\subsubsection[{defiler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf noeud}$\ast$ defiler (
+\begin{DoxyParamCaption}
+\item[{{\bf file} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{file_8c_ae73de302a04131c0ba415699716cb0c2}
+
+
+\+: permet de defiler le dernier element de la file et change le pointeur sur le dernier element de la file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$f (file) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: noeud$\ast$ 
+\end{DoxyReturn}
+\hypertarget{file_8c_a959fcb5a8c527c69e2c18cfa5dbc6633}{\index{file.\+c@{file.\+c}!enfiler@{enfiler}}
+\index{enfiler@{enfiler}!file.\+c@{file.\+c}}
+\subsubsection[{enfiler}]{\setlength{\rightskip}{0pt plus 5cm}void enfiler (
+\begin{DoxyParamCaption}
+\item[{{\bf file} $\ast$}]{f, }
+\item[{{\bf noeud} $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{file_8c_a959fcb5a8c527c69e2c18cfa5dbc6633}
+
+
+\+: permet d'ajouter un element a la file, cette element ayant un noeud donner en parametre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$f(file), $\ast$n (noeud a ajouter) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{file_8c_ad9fbbd0da18627b89c05572fd8cc4487}{\index{file.\+c@{file.\+c}!file\+Vide@{file\+Vide}}
+\index{file\+Vide@{file\+Vide}!file.\+c@{file.\+c}}
+\subsubsection[{file\+Vide}]{\setlength{\rightskip}{0pt plus 5cm}int file\+Vide (
+\begin{DoxyParamCaption}
+\item[{{\bf file} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{file_8c_ad9fbbd0da18627b89c05572fd8cc4487}
+
+
+\+: test si une file est vide ou non 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$f (file) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: int (1 si vide 0 sinon) 
+\end{DoxyReturn}
+\hypertarget{file_8c_a5593dc6426626dc9ebb71c7d224a21c6}{\index{file.\+c@{file.\+c}!print\+Element\+File@{print\+Element\+File}}
+\index{print\+Element\+File@{print\+Element\+File}!file.\+c@{file.\+c}}
+\subsubsection[{print\+Element\+File}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Element\+File (
+\begin{DoxyParamCaption}
+\item[{{\bf element\+File} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{file_8c_a5593dc6426626dc9ebb71c7d224a21c6}
+
+
+\+: affiche un element d'une file passé en parametre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$f (element de la file) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
+\hypertarget{file_8c_aa4b866d049db2f285fe0593649884adc}{\index{file.\+c@{file.\+c}!print\+File@{print\+File}}
+\index{print\+File@{print\+File}!file.\+c@{file.\+c}}
+\subsubsection[{print\+File}]{\setlength{\rightskip}{0pt plus 5cm}void print\+File (
+\begin{DoxyParamCaption}
+\item[{{\bf file} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{file_8c_aa4b866d049db2f285fe0593649884adc}
+
+
+\+: affiche une file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & $\ast$f (file a afficher) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: void 
+\end{DoxyReturn}
