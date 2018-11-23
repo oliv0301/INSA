@@ -1,0 +1,5 @@
+int chaine_longueur_rec(char *s)
+{
+	if (*s == 0) return 0;
+	else return 1 + chaine_longueur 
+}
